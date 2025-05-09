@@ -34,27 +34,7 @@ The application works seamlessly across both desktop and mobile devices, with Go
   - Firebase Cloud Functions
 
 ## 🏗️ Project Structure
-  src/
-├── components/
-│ ├── common/ # Reusable UI components
-│ ├── gear/ # Gear-related components
-│ ├── auth/ # Authentication components
-│ └── transactions/ # Lending/borrowing components
-├── pages/
-│ ├── Home.tsx
-│ ├── MyGear.tsx
-│ ├── BorrowedGear.tsx
-│ ├── LentGear.tsx
-│ └── Profile.tsx
-├── services/
-│ ├── authService.ts # Firebase auth methods
-│ ├── gearService.ts # Gear CRUD operations
-│ └── lendingService.ts # Lending/borrowing logic
-├── hooks/
-│ └── useAuth.ts # Custom auth hook
-├── context/
-│ └── AuthContext.tsx # User context provider
-└── App.tsx
+<pre lang="markdown"> ```plaintext src/ ├── components/ │ ├── common/ # Reusable UI components │ ├── gear/ # Gear-related components │ ├── auth/ # Authentication components │ └── transactions/ # Lending/borrowing components ├── pages/ │ ├── Home.tsx │ ├── MyGear.tsx │ ├── BorrowedGear.tsx │ ├── LentGear.tsx │ └── Profile.tsx ├── services/ │ ├── authService.ts # Firebase auth methods │ ├── gearService.ts # Gear CRUD operations │ └── lendingService.ts # Lending/borrowing logic ├── hooks/ │ └── useAuth.ts # Custom auth hook ├── context/ │ └── AuthContext.tsx # User context provider └── App.tsx ``` </pre>
 
 ## ✨ Key Features
 
