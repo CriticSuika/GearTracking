@@ -34,3 +34,55 @@ The application works seamlessly across both desktop and mobile devices, with Go
   - Firebase Cloud Functions
 
 ## 🏗️ Project Structure
+  src/
+  ├── components/
+  │   ├── common/          # Reusable UI components
+  │   ├── gear/            # Gear-related components
+  │   ├── auth/            # Authentication components
+  │   └── transactions/    # Lending/borrowing components
+  ├── pages/
+  │   ├── Home.tsx
+  │   ├── MyGear.tsx
+  │   ├── BorrowedGear.tsx
+  │   ├── LentGear.tsx
+  │   └── Profile.tsx
+  ├── services/
+  │   ├── authService.ts   # Firebase auth methods
+  │   ├── gearService.ts   # Gear CRUD operations
+  │   └── lendingService.ts # Lending/borrowing logic
+  ├── hooks/
+  │   └── useAuth.ts       # Custom auth hook
+  ├── context/
+  │   └── AuthContext.tsx  # User context provider
+  └── App.tsx
+
+## ✨ Key Features
+
+### Authentication
+- Google account sign-in integration
+- User profiles with lending/borrowing history
+- Authentication state persistence
+
+### Gear Management
+- Add, edit, and remove gear items
+- Upload gear images
+- Categorize gear by type
+- Set availability status
+
+### Lending System
+- Request to borrow gear
+- Approve/reject lending requests
+- Set lending duration
+- Track current status of lent/borrowed items
+- Return confirmation process
+
+### Notifications
+- Lending request notifications
+- Return reminders
+- Request status updates
+
+### PWA Features
+- Installable on desktop and mobile devices
+- Offline functionality for viewing owned and borrowed gear
+- Push notifications (where supported)
+- Responsive design for all screen sizes
